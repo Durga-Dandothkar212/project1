@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            padding: 30px;
+        }
+        .main {
+            width: 100%;
+            margin-right: 0%;
+        }
+
+ 
+        .a{ 
+            background-image: url(./tm-sigma-00.jpg);
+            text-align: center; 
+            width: 100%; height: 300px;
+            align-content: center;
+        
+        }
+ 
+        .p{
+            text-align: center;
+            justify-content: space-evenly;
+            bottom: 100px;
+            align-content: center;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        
+        }
+        .icon{
+            display: flex; 
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%; 
+            justify-content: center;
+        }
+         
+        
+        .b{
+            background-color:rgba(122, 138, 140, 0.267);
+            height: 250px; 
+            width: 361px;
+            padding-top: 50px;
+            text-align: center;
+        }
+ 
+        
+        
+        .c{
+            background-color: rgb(142, 135, 135);
+            height: 250px;
+            width: 360px;
+            padding-top: 50px;
+            text-align: center;
+             color: white;
+        }
+ 
+        
+        .d{
+            background-color: rgb(56, 52, 52);
+            height: 250px; 
+            width: 360px;
+            align-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 50px;
+        }
+ 
+        
+        
+        .e{
+            background-color: rgb(46, 42, 42);
+            height: 250px;
+             width: 360px;
+            align-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 50px;
+        }
+ 
+        .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 300px;
+
+        }
+
+
+
+        .grid_two{
+        display: grid;
+        margin-top: 3px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 200px;
+
+
+        }
+        
+        .box1{
+            
+             background-size: cover;
+             background-image: url(./tm-sigma-01.jpg);
+
+
+        }
+
+        .box2{
+            background-image: url(./tm-sigma-02.jpg);
+            background-size: cover;
+
+       }
+       .box3{
+            background-image: url(./tm-sigma-03.jpg);
+            background-size: cover;
+
+       }
+       .box4{
+            background-image: url(./tm-sigma-04.jpg);
+            background-size: cover;
+            grid-row: 2/4;
+            grid-column: 1/3;
+
+       }
+
+       .box5{
+            background-image: url(./tm-sigma-05.jpg);
+            background-size: cover;
+
+       }
+
+
+       .box6{
+            background-image: url(./tm-sigma-06.jpg);
+            background-size: cover;
+
+       }
+
+       .box7{
+        background-image: url(./tm-sigma-07.jpg);
+        background-position: center;
+            background-size: cover;
+            grid-column: 1/3;
+            grid-row: 1/3;
+       }
+
+       .box8{
+            background-image: url(./tm-sigma-08.jpg);
+            background-size: cover;
+            grid-column: 3/5;
+            grid-row: 1/3;
+           
+
+       }
+
+       .box9{
+            background-image: url(./tm-sigma-01.jpg);
+            background-size: cover;
+
+       }
+
+
+       .box10{
+            background-image: url(./tm-sigma-02.jpg);
+            background-size: cover;
+
+       }
+
+       .box11{
+            background-image: url(./tm-sigma-03.jpg);
+            background-size: cover;
+
+       }
+
+       .box12{
+            background-image: url(./tm-sigma-04.jpg);
+            background-size: cover;
+
+       }
+       .box13{
+        background-color: rgb(233, 141, 208);
+        grid-row: 1/2;
+        grid-column: 1/3;
+        align-content: center;
+        text-align: center;
+       }
+       .box14{
+        background-color: rgba(21, 133, 237, 0.627);
+        grid-row: 1/2;
+        grid-column: 3/5;
+        align-content: center;
+        text-align: center;
+       }
+       .box15{
+        background-color: rgba(90, 7, 7, 0.9);
+        color: white;
+        align-content: center;
+        text-align: center;
+       }
+       .box16{
+        background-color: rgb(25, 93, 152);
+        color: white;
+        align-content: center;
+        text-align: center;
+       }
+       .box17{
+        background-color: hsla(143, 59%, 23%, 0.897);
+        color: white;
+        align-content: center;
+        text-align: center;
+       }
+       .box18{
+        background-color: rgb(121, 121, 16);
+        color: white;
+        align-content: center;
+        text-align: center;
+        
+       }
+
+       .design{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%; height: 50%;
+        } 
+        .f{
+            
+            background-color:rgba(122, 138, 140, 0.267);
+            height: 150px; width: 31.7%;
+            align-content: center;
+            padding-left:  2.1%;
+            text-align: left;
+    
+
+        }
+        .g{
+            background-color: rgb(142, 135, 135);
+            height: 150px; width: 31%;
+            align-content: center;
+            padding-left:  2.1%;
+            text-align: left; color: white;
+
+        }
+        .h{
+            background-color: rgb(56, 52, 52);
+            height: 150px; width: 31%;
+            align-content: center;
+            text-align: left;
+            padding-left:  2.1%;
+            color: white;
+        }
+         
+
+
+
+
+
+                .grid_three{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 200px;
+        height: 30%;
+    }
+
+    .about{                                                          
+            background-image: url(./tm-sigma-00.jpg);
+            text-align: center; 
+            background-size: 200px 200px;
+            align-content: center;
+            height: 200px; width: 100%;
+    }
+            
+    
+ 
+
+    .contact{
+        background-image: url(./tm-sigma-00.jpg);
+        background-size: 200px 200px;
+        height: 200px;
+        text-align: center; 
+        align-content: center;
+        width: 100%;
+    }
+
+    .last{
+        display: flex;
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+        height: 200px;
+    }
+     
+    .top{
+        display: flex;
+        position: relative;
+    }
+
+    @media screen and (max-width:375){
+        .icon{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%; 
+            justify-content: center;
+            height: 20%;
+            font-size: 10px ;
+        }
+        .three{
+            font-size: 6px;
+        }
+        
+ 
+        
+
+    }
+
+
+
+    @media screen and (max-width:426px) {
+        .top span{
+            font-size: 6px !important; 
+            padding: 8px;
+        
+        }
+        
+        .a{ 
+            background-image: url(./tm-sigma-00.jpg);
+            text-align: center; 
+            width: 100%; height: 300px;
+            align-content: center;
+            font-size: medium;
+        }
+        .icon{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%; 
+            justify-content: center;
+            height: 30%;
+            font-size: medium ;
+        }
+
+        .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 100px;
+
+        }
+
+        .grid_two{
+        display: grid;
+        margin-top: 3px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 100px;
+
+
+        }
+
+        .design{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%; height: 50%;
+            font-size: small;
+        }
+        .about{                                                          
+            background-image: url(./tm-sigma-00.jpg);
+            text-align: center; 
+            background-size: 200px 200px;
+            align-content: center;
+            height: 200px; width: 100%;
+            font-size: small;
+    }
+        .grid_three{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 100px;
+        height: 20%; width: 100%;
+        font-size: x-small;
+        
+    }
+    .last{
+        display: flex;
+        width: 100%;
+        font-size: xx-small;
+        margin-left: 5px;
+    }
+    body{
+            padding: 10px;
+        }
+        .one{
+            font-size: 10px;
+        }
+        .two{
+            font-size: 10px;
+        }
+        .three{
+            font-size: 6px;
+        }
+
+
+
+        
+    }
+    @media screen and (max-width:768px) {
+        .top span{
+            font-size: 12px;
+            padding: 10px;
+        
+        }
+        .external{
+            margin-left: 10px;
+        }
+        .a{ 
+            background-image: url(./tm-sigma-00.jpg);
+            text-align: center; 
+            width: 100%; height: 300px;
+            align-content: center;
+            font-size: medium;
+        }
+        .icon{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%; 
+            justify-content: center;
+            height: 30%;
+            font-size: medium ;
+        }
+
+        .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 100px;
+
+        }
+
+        .grid_two{
+        display: grid;
+        margin-top: 3px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 100px;
+
+
+        }
+
+        .design{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%; height: 50%;
+            font-size: small;
+        }
+        .about{                                                          
+            background-image: url(./tm-sigma-00.jpg);
+            text-align: center; 
+            background-size: 200px 200px;
+            align-content: center;
+            height: 200px; width: 100%;
+            font-size: small;
+    }
+        .grid_three{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 100px;
+        height: 20%; width: 100%;
+        font-size: 9px;
+        
+    }
+    .last{
+        display: flex;
+        width: 100%;
+        font-size: xx-small;
+        margin-left: 5px;
+    }
+    body{
+            padding: 10px;
+        }
+        .one{
+            font-size: 10px;
+        }
+        
+        .two{
+            font-size: 10px;
+        }
+        .three{
+            font-size: 10px;
+        }
+
+
+
+        
+    }
+
+    @media screen and (max-width:1025px){
+        .icon{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%; 
+            justify-content: center;
+            height: 30%;
+            font-size: medium ;
+        } 
+        .b{
+            background-color:rgba(122, 138, 140, 0.267);
+            height: 250px; 
+            width: 50%;
+            padding-top: 50px;
+            text-align: center;
+        }
+        .c{
+            background-color: rgb(142, 135, 135);
+            height: 250px;
+            width: 50%;
+            padding-top: 50px;
+            text-align: center;
+             color: white;
+        }
+ 
+        
+        .d{
+            background-color: rgb(56, 52, 52);
+            height: 250px; 
+            width: 50%;
+            align-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 50px;
+        }
+ 
+        
+        
+        .e{
+            background-color: rgb(46, 42, 42);
+            height: 250px;
+             width: 50%;
+            align-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 50px;
+        }
+ 
+    }
+
+
+
+ 
+
+
+
+ 
+     </style>
+</head>
+<body>
+
+    <div class="main">
+       <div class="top">
+                    <span><h2>Sigma</h2>
+                Image gallery built on bootstrap 4.0 </span>
+                    <span style="position: absolute; right: 23%; padding: 30px;">Home</span>
+                    <span style="position: absolute; right: 17%; padding: 30px;">Gallery</span>
+                    <span style="position: absolute; right: 12%; padding: 30px;">About</span>
+                    <span style="position: absolute; right: 6%; padding: 30px;">Contact</span>
+                    <span class="external" style="position: absolute; right: 0%; padding: 30px;">External</span>
+        </div>
+
+
+        <div class="a">
+            <h2>Boot Strap 4.0 Theme </h2>
+            <p>Sigma is free Bootstrap 4(alpha 2)theme designed for a metro-style</p><p>image grid gallery. Download, modify and use this layout for your </p><p>websites.</p>
+            <button style="background-color: red; color: white; height: 30px; border-color: red;">Our Gallery</button>
+            <button style="background-color:  green; color: white; height: 30px; border-color:green;">Learn More</button>
+        </div>
+
+       
+
+
+    <div class="icon"> 
+        <div class="b">
+        <img src="https://cdn-icons-png.flaticon.com/128/25/25706.png" width="30px" height="30px">
+        <p>Design</p> <br> <p>Praesent lorem dui, suscipit eu volupat </p><p>id, solicitudin ut mi. praesent ornare</p><p> massa vehicula</p>
+        </div>
+    <div class="c">
+        <img src="https://img.icons8.com/?size=50&id=18186&format=png" width="30px" height="30px">
+        <p>Implement</p> <br> <p>Praesent lorem dui, suscipit eu volupat </p><p>id, solicitudin ut mi. praesent ornare</p><p> massa vehicula</p>
+    </div>
+    <div class="d">
+        <img src="https://cdn-icons-png.flaticon.com/128/126/126473.png" width="30px" height="30px">
+        <p>Enhance</p> <br> <p>Praesent lorem dui, suscipit eu volupat </p><p>id, solicitudin ut mi. praesent ornare</p><p> massa vehicula</p>
+    </div>
+    <div class="e">
+        <img src="https://cdn-icons-png.flaticon.com/128/900/900772.png" width="30px" height="30px">
+        <p>Monitor</p> <br> <p>Praesent lorem dui, suscipit eu volupat </p><p>id, solicitudin ut mi. praesent ornare</p><p> massa vehicula</p>
+    </div>
+    </div>
+     
+    <div class="grid">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+
+
+</div>
+
+
+<div class="grid_two">
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+    <div class="box10"></div>
+    <div class="box11"></div>
+    <div class="box12"></div>
+
+</div>
+
+
+    <div class="about">
+    <h3>About Us</h3>
+    <p>sed elit elit, dictum eu turpis non, fringilla efficitur ipsum. Phasellus ultrices, nunc et tempus prta,</p>
+    <p>tellus purus elementum ex, volutpat lobortis orci dolor in tortor.</p>
+</div>
+<div class="design">
+    <div class="f" >
+        <h3>01 Design</h3>
+        <p>Praesent lorem dui, suscipit eu volupat id, solicitudin ut</p><p>mi. praesent ornare massa vehicula.</p>
+    </div>
+    <div class="g">
+        <h3>01 Design</h3>
+        <p>Praesent lorem dui, suscipit eu volupat id, solicitudin ut</p><p>mi. praesent ornare massa vehicula.</p>
+    </div>
+    <div class="h">
+        <h3>01 Design</h3>
+        <p>Praesent lorem dui, suscipit eu volupat id, solicitudin ut</p><p>mi. praesent ornare massa vehicula.</p>
+    </div>
+</div>
+
+<div class="grid_three">
+    <div class="box13">
+        <b>Left column</b>
+        <p>Praesent lorem dui, suscipit eu volupat id, solicitudin ut mi. praesent ornare massa vehicula</p>
+        <button style="color: white; background-color: blue;">Read Detail</button>
+    </div>
+    <div class="box14">
+        <b>Right column</b>
+        <p>Praesent lorem dui, suscipit eu volupat id, solicitudin ut mi. praesent ornare massa vehicula</p>
+        <button style="color: white; background-color: red;">Learn More</button>
+    </div>
+    <div class="box15">
+        <b>Our Team</b>
+        <p>Praesent lorem dui, suscipit eu volupat id, solicitudin ut mi. praesent ornare massa vehicula</p>
+        
+    </div>
+    <div class="box16">
+        <b>History</b>
+        <p>Praesent lorem dui, suscipit eu volupat id, solicitudin ut mi. praesent ornare massa vehicula</p>
+        
+    </div>
+    <div class="box17">
+        <b>Management</b>
+        <p>Praesent lorem dui, suscipit eu volupat id, solicitudin ut mi. praesent ornare massa vehicula</p>
+        
+    </div>
+    <div class="box18">
+        <b>Career</b>
+        <p>Praesent lorem dui, suscipit eu volupat id, solicitudin ut mi. praesent ornare massa vehicula</p>
+    
+    </div>
+</div>
+    <div class="contact">
+        <b>Contact</b>
+      <p>You may <span style="color: blue;">contact</span> templatemo if you have any question. Suspendisse dolor purus, malesuada ut</p>
+      <p>luctus quis, consectetur vel ante. integer a pulvinar orci.</p>
+    </div>
+<div class="last" style="padding-top: 10px;">
+<div class="form one">
+    <form>
+            <label for="Name">Your Name</label><br>
+            <input type="text" placeholder="Write a Full Name" id="Name" style="border-top: 1px solid; width: 90%;"><br><br>
+            <label for="mail">Your Email</label><br>
+            <input type="email" placeholder="Enter your email" id="mail"  style="border-top: 1px solid; width: 90%;"><br><br>
+            <label for="bud">Your Budget</label><br>
+            <select name="Your Budget" id="bud" style="border-top: 1px solid; width: 90%;">
+                <option value="Your Budget">$500</option>
+             </select>
+        </form>
+ </div>
+ <div class="form two">
+    <form>
+            <label for="Sub">Subject</label><br>
+            <input type="text" placeholder="subject" id="sub" style="border-top: 1px solid;width: 90%;"><br><br>
+            <label for="msg">Your Message</label><br>
+            <textarea name="Write a message" id="msg" style="border-top: 1px solid; width: 90%; height: 80px;">Write a message</textarea><br><br>
+            <input type="checkbox">
+            <label for="checkbox">I am not a robot</label><br><br>
+            <button style="text-align: center; background-color: rgb(79, 228, 79);color: white; height: 30px; ">Submit</button>
+    </form>
+             
+</div>
+    
+     <div class="form three" style="padding-left: 10px;">
+    <h3>Our Address</h3>
+    <p>Suspendisse dolor purus, malesuada ut luctus quis,</p>
+    <p>consectetur vel ante. Integer a pulvinar orci, eget sagittis enim</p>
+    <img src="https://cdn-icons-png.flaticon.com/128/2549/2549872.png" width="10px" height="10px">&nbsp; &nbsp;  Email: info@company.com<br>
+    <img src="https://cdn-icons-png.flaticon.com/128/9466/9466144.png" width="10px" height="10px">&nbsp; &nbsp; Phone: 070-070-0880
+    </div>
+</div>
+</div>
+</body>
+</html>
